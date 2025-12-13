@@ -1,10 +1,4 @@
-student = {
-  "name" : "sabuj ghorai",
-  "subject" : {
-    "phy" : 87,
-    "chem" : 89,
-    "math" : 87,
-    dict = {
+dict = {
   "name" : "sanbuj ghorai ",
   "age" : 21,
   "learning" : "python",
@@ -17,8 +11,3 @@ student = {
 print(dict["name"])
 print(dict["age"])
 print(dict["learning"])
-print()
-  }
-}
-print(len(student))
-print(list(student.keys()))
