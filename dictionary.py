@@ -11,3 +11,15 @@ dict = {
 print(dict["name"])
 print(dict["age"])
 print(dict["learning"])
+
+# nested dictionary......
+student = {
+  "name" : "Sabuj Ghorai",
+  "subject" : {  # nested dictionary
+    "phy" : 95,
+    "chem" : 91,
+    "maths" : 93
+  }
+}
+print(student["subject"])
+print(student["subject"]["chem"])
