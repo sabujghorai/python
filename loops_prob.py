@@ -53,3 +53,11 @@ i = 1
 while i<=n:
   print(i+1)
   i+=1
+
+
+# WAP to find the sun of first n natural numbers using while loop
+n = int(input("Enter a number:"))
+sum = 0
+for i in range(n+1):
+  sum = sum+i
+print("the sum is:",sum)
