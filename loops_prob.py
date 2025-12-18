@@ -30,3 +30,26 @@ for i in list:
   print(i)
 else:
   print("happy journy")
+
+# print number from 1 to 100 using for loop & range function
+
+for i in range(1,101):
+  print(i)
+
+  # print number from 100 to 1 using for loop and range function
+for i in range(100,0,-1):
+  print(i)
+
+# print the multiplication table of a number n using for loop and range function
+
+n = int(input("Enter a number :"))
+for i in range(1,11):
+  print(i*n)
+
+# WAP to find the sun of first n numbers using while loop
+
+n = int(input("Enter a number :"))
+i = 1
+while i<=n:
+  print(i+1)
+  i+=1
