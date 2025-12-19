@@ -16,3 +16,13 @@ def sum(a=5,b=7):
   return avg
 
 sum() # we are not assigning the argument
+
+# sum of two numbers taking input from users
+def number(a,b):
+  sum = a+b
+  print(sum)
+  return
+
+a = int(input("Enter a number:"))
+b = int(input("Enter another number :"))
+number(a,b)
