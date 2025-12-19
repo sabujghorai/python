@@ -6,3 +6,11 @@ def sum(a,b): # def means define --> a and b is parameters
 a = int(input("Enter a number :"))
 b = int(input("Enter a another number :"))
 sum(a,b) # function call --> a,b is arguments
+
+# default parameter
+def sum(a=5,b=7):
+  avg = (a+b)/2
+  print(avg)
+  return avg
+
+sum() # we are not assigning the argument
