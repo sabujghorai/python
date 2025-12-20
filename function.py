@@ -21,3 +21,10 @@ def greet(name):
 
 # Call the function
 greet("John")
+
+def add(a, b):
+    """Returns the sum of two numbers."""
+    return a + b
+
+result = add(2, 3)
+print(result)  # Output: 5
