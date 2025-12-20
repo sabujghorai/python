@@ -46,3 +46,14 @@ try:
     print(f"Factorial of {num} is: {factorial(num)}")
 except ValueError:
     print("Please enter a valid integer.")
+
+# code for finding fibonacci series
+
+def fibonacci(n):
+    fib_series = [0, 1]
+    while len(fib_series) < n:
+        fib_series.append(fib_series[-1] + fib_series[-2])
+    return fib_series[:n]
+
+n = 10  # Number of terms
+print(f"Fibonacci Series up to {n} terms: {fibonacci(n)}")
