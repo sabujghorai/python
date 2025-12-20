@@ -14,3 +14,10 @@ def sum(a=5,b=7):
   return avg
 
 sum() # we are not assigning the argument
+
+def greet(name):
+    """Prints a personalized greeting message."""
+    print(f"Hello, {name}!")
+
+# Call the function
+greet("John")
