@@ -27,26 +27,6 @@ a = int(input("Enter a number:"))
 b = int(input("Enter another number :"))
 number(a,b)
 
-# this is the code for finding factorial
-
-def factorial(n):
-    if n < 0:
-        return "Factorial not defined for negative numbers"
-    elif n == 0 or n == 1:
-        return 1
-    else:
-        fact = 1
-        for i in range(2, n + 1):
-            fact *= i
-        return fact
-
-# Take user input
-try:
-    num = int(input("Enter a number: "))
-    print(f"Factorial of {num} is: {factorial(num)}")
-except ValueError:
-    print("Please enter a valid integer.")
-
 # code for finding fibonacci series
 
 def fibonacci(n):
