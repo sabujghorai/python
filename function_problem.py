@@ -57,3 +57,12 @@ def fibonacci(n):
 
 n = 10  # Number of terms
 print(f"Fibonacci Series up to {n} terms: {fibonacci(n)}")
+
+# WAP  to print the length of a list(list is s parameter)
+
+number = [10,20,30,40,50,60]
+
+def print_length(a):
+  print(len(a))
+
+print_length(number) # function call
