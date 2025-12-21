@@ -68,3 +68,14 @@ def print_fact(a):
   print("factorial of your given number is :",fact)
 
 print_fact(b)
+
+
+# write a program to convert USD to INR
+
+b = int(input("Enter your USD value :"))
+
+def inr(a):
+  print("your INR is :",a*89.5)
+  return a*89.5
+
+inr(b)
