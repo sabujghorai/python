@@ -74,8 +74,8 @@ print_fact(b)
 
 b = int(input("Enter your USD value :"))
 
-def inr(a):
-  print("your INR is :",a*89.5)
-  return a*89.5
+def inr_value(USD):
+  print(b ,"USD =",USD*89.5,"INR")
+  return USD*89.5
 
-inr(b)
+inr_value(b)
