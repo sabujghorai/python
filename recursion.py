@@ -10,7 +10,6 @@ def show(n):
 show(b)
 
 # print the factorial of a number using recursion taking from user input
-# print the factorial of a number taking user input
 
 b = int(input("Enter a number :"))
 
