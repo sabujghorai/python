@@ -19,3 +19,14 @@ def fact(a):
   return a*fact(a-1)
 
 print("factorial of your given number is :",fact(b))
+
+# print the sum of all n natural numbers
+
+b = int(input("Enter a number :"))
+
+def sum(a):
+  if(a == 1):
+    return 1
+  return a+sum(a-1)
+
+print("sum of your all natural number is :",sum(b))
