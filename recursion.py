@@ -44,7 +44,7 @@ n = int(input("Enter the number of terms: "))
 print("Fibonacci series:")
 for i in range(n):
     print(fibonacci(i), end=" ")
-
+# power of a number...
 def power(a, b):
     if b == 0:
         return 1
@@ -53,3 +53,20 @@ def power(a, b):
 a = int(input("Enter base: "))
 b = int(input("Enter power: "))
 print("Result:", power(a, b))
+
+def count_digits(n):
+    if n == 0:
+        return 0
+    return 1 + count_digits(n // 10)
+
+num = int(input("Enter a number: "))
+print("Number of digits:", count_digits(num))
+
+# count digit in a numbere
+def count_digits(n):
+    if n == 0:
+        return 0
+    return 1 + count_digits(n // 10)
+
+num = int(input("Enter a number: "))
+print("Number of digits:", count_digits(num))
