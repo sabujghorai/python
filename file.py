@@ -13,3 +13,6 @@ f.close() # closing the file
 # 'b' --> binary Mode 
 # 't' --> text mode (default)
 # '+' --> open a disk file for updating(reading and writing)
+f = open("demo.txt","w")
+print(f.write("hello this is a new line")) # overwrite a the entire file
+f.close()
