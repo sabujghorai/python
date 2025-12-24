@@ -71,3 +71,14 @@ def count_digits(n):
 
 num = int(input("Enter a number: "))
 print("Number of digits:", count_digits(num))
+
+# write a recursive function to print all element in a list 
+# Hint : use & index as parameter
+
+def print_list(list,idx=0):
+   if (len(list) == idx):
+      return
+   print(list[idx])
+   print_list(list,idx+1)
+fruit = ["mango","banana","lichi","orange"]
+print_list
