@@ -1,5 +1,7 @@
-# I have created a file name "demo.txt" now to read the file we have to write some syntax in python
-# syntax
-f.open("demo.txt","r") # in first quotion mark we have to enter the file name and in the second we have to enter the mode
-data = f.read() # reading the file
-print(data) # printing the file
+# syntax for reading a file
+f = open("demo.txt","r") # first quotation = file name ,second quotation = mode
+print(f.read(10)) # only prints the 10 character of the file
+print(f.readline()) # read one line at a time
+print(f.read()) # read entire file
+print
+f.close() # closing the file
