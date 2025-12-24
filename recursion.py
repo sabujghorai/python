@@ -31,6 +31,7 @@ def sum(a):
 
 print("sum of your all natural number is :",sum(b))
 
+# fibonacci series of n term taking input from user
 def fibonacci(n):
     if n == 0:
         return 0
