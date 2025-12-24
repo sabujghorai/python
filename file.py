@@ -16,3 +16,7 @@ f.close() # closing the file
 f = open("demo.txt","w")
 print(f.write("hello this is a new line")) # overwrite a the entire file
 f.close()
+
+f = open("demo.txt","a") # print the char at the end in the demo.txt file
+print(f.write("\n i want to learn java script"))
+f.close()
