@@ -20,3 +20,12 @@ f.close()
 f = open("demo.txt","a") # print the char at the end in the demo.txt file
 print(f.write("\n i want to learn java script"))
 f.close()
+
+# if we don't have ant text file and we want to create it
+# we can create it by using the write and append mode
+f = open("sample.txt","w") # by default it will create a new file --> write mode
+f.close()
+
+#--> append mode
+f = open("sample2.txt","a")
+f.close()
