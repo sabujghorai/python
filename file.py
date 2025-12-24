@@ -5,3 +5,11 @@ print(f.readline()) # read one line at a time
 print(f.read()) # read entire file
 print
 f.close() # closing the file
+
+# 'r' --> open for reading (default)
+# 'w' --> open for writing, truncating the file first
+# 'x' --> create a new file and open for writing
+# 'a' --> open for writing, appending to the end of  the file if it exist 
+# 'b' --> binary Mode 
+# 't' --> text mode (default)
+# '+' --> open a disk file for updating(reading and writing)
