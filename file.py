@@ -29,3 +29,11 @@ f.close()
 #--> append mode
 f = open("sample2.txt","a")
 f.close()
+
+f = open("demo.txt","r+") 
+print(f.write("abc")) # over write the file at the starting
+# means if we write in a file something like this --> This is a sample file
+# after using the r+ mode it will print " abcs uis a new file " here in "this" the thi has erased
+# and insted of thi abc is added 
+print(f.read())# reading the file after over writing 
+f.close()
