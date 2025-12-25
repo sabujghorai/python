@@ -46,3 +46,8 @@ print(s.write("hello how are you all"))# it will edit the file at the end
 # it will edit the file at the end something like this --> This is a sample filehello how are you all
 print(s.read())
 s.close()
+
+# write + mode
+d = open("demo.txt","w+") # truncating means it will delete the whole file and newly write the good morning
+print(d.write("good morning"))
+d.close()
