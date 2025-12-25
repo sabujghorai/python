@@ -51,3 +51,8 @@ s.close()
 d = open("demo.txt","w+") # truncating means it will delete the whole file and newly write the good morning
 print(d.write("good morning"))
 d.close()
+
+#  WITH SYNTAX --> it's a better syntax for openning or closing a file
+with open("demo.txt","a+")as f: #--> the f is the variable we can assigning any thing else
+    data = f.write("good evening")
+# insted of writing the upper syntax we can symply write a with syntax and we can edit or read or apped the file also
