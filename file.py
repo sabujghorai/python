@@ -39,7 +39,7 @@ print(f.read())# reading the file after over writing
 f.close()
 
 # append + mode "a+"
-s = open("demo.txt","a+")
+s = open("demo.txt","a+") # no truncate means file delete nahi hota hay
 print(s.write("hello how are you all"))# it will edit the file at the end
 # it will not overwrite the file
 # means if we write in a file something like this --> This is a sample file
