@@ -30,7 +30,7 @@ f.close()
 f = open("sample2.txt","a")
 f.close()
 
-f = open("demo.txt","r+") 
+f = open("demo.txt","r+") # no truncate means file delete nahi hota hay
 print(f.write("abc")) # over write the file at the starting
 # means if we write in a file something like this --> This is a sample file
 # after using the r+ mode it will print " abcs uis a new file " here in "this" the thi has erased
