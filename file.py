@@ -57,3 +57,4 @@ with open("demo.txt","a+")as f: #--> the f is the variable we can assigning any 
     # and the "as" --> is the alias(উপনাম) of "f"
     data = f.write("good evening")
 # insted of writing the upper syntax we can symply write a with syntax and we can edit or read or apped the file also
+# this with syntax automatically closes the file
