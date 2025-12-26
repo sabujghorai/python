@@ -82,3 +82,11 @@ print(new_data)
 
 with open("practice.txt","w")as f:
     data = f.write(new_data)
+# search the word "learning" exist in the file or not
+with open("practice.txt","r")as f:
+    data = f.read()
+    print(data)
+if(data.find("learning") != -1): # the -1 is to indicate not found 
+    print("found")
+else:
+    print("not found")
