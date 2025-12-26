@@ -72,3 +72,13 @@ os.remove("demo.txt")
 with open("practice.txt","w+")as f:
     print(f.write("hi everyone\n we are learning file I/O\n i love python"))
 print(f.read)
+
+# now our question is replaces all occurences of "JAVA" with "PYTHON" in above file
+with open("practice.txt","r")as f:
+    data = f.read()
+
+new_data = data.replace("java","python")
+print(new_data)
+
+with open("practice.txt","w")as f:
+    data = f.write(new_data)
