@@ -63,3 +63,12 @@ with open("demo.txt","a+")as f: #--> the f is the variable we can assigning any 
 import os
 os.remove("demo.txt")
 
+#Question practice 
+
+# create a new file name "practice.txt" and add some data
+   # hi everyone 
+    # we are learning file I/O 
+     # i love python
+with open("practice.txt","w+")as f:
+    print(f.write("hi everyone\n we are learning file I/O\n i love python"))
+print(f.read)
