@@ -24,6 +24,7 @@ my_new_car = Car("TATA","safari")
 print(my_new_car.brand)
 print(my_new_car.model)
 
+# basic class and object
 class Student:
     def __init__(self, name, age):
         self.name = name
@@ -36,3 +37,15 @@ class Student:
 # Object creation
 s1 = Student("Sabuj", 21)
 s1.display()
+
+# class with methids
+class Calculator:
+    def add(self, a, b):
+        return a + b
+
+    def subtract(self, a, b):
+        return a - b
+
+calc = Calculator()
+print("Addition:", calc.add(10, 5))
+print("Subtraction:", calc.subtract(10, 5))
