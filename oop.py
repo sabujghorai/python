@@ -16,7 +16,7 @@ class Car:
         self.model = model
 
 
-my_car = Car("mercedese","53")
+my_car = Car("mercedese","Benz")
 print(my_car.brand)
 print(my_car.model)
 # making a new brand and model
