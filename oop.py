@@ -23,3 +23,16 @@ print(my_car.model)
 my_new_car = Car("TATA","safari")
 print(my_new_car.brand)
 print(my_new_car.model)
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+# Object creation
+s1 = Student("Sabuj", 21)
+s1.display()
