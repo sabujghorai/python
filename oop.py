@@ -19,3 +19,7 @@ class Car:
 my_car = Car("mercedese","53")
 print(my_car.brand)
 print(my_car.model)
+# making a new brand and model
+my_new_car = Car("TATA","safari")
+print(my_new_car.brand)
+print(my_new_car.model)
