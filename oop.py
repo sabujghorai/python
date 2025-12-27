@@ -76,3 +76,17 @@ class BankAccount:
 account = BankAccount(5000)
 account.deposit(2000)
 account.show_balance()
+# Polymorphism
+class Bird:
+    def fly(self):
+        print("Bird can fly")
+
+class Penguin(Bird):
+    def fly(self):
+        print("Penguin cannot fly")
+
+b1 = Bird()
+b2 = Penguin()
+
+b1.fly()
+b2.fly()
