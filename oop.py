@@ -1,4 +1,4 @@
-class Car: # first letter must be capital letter 'S'tudnet
+class Car: # first letter must be capital letter 'c'ar
     car_name = "Mercedese Benz"
     model_no = 23
     colour = "Blue"
