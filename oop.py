@@ -49,3 +49,16 @@ class Calculator:
 calc = Calculator()
 print("Addition:", calc.add(10, 5))
 print("Subtraction:", calc.subtract(10, 5))
+
+# inheritence
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def speak(self):
+        print("Dog barks")
+
+d = Dog()
+d.speak()
+
