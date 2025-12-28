@@ -90,3 +90,20 @@ b2 = Penguin()
 
 b1.fly()
 b2.fly()
+
+# Real-Life Example (Combined OOP)
+class Vehicle:
+    def __init__(self, brand):
+        self.brand = brand
+
+    def start(self):
+        print(self.brand, "vehicle started")
+
+
+class Car(Vehicle):
+    def start(self):
+        print(self.brand, "car started with key")
+
+
+car = Car("Toyota")
+car.start()
