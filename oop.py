@@ -136,3 +136,16 @@ class Teacher(Person):
 t = Teacher()
 t.display()
 t.teach()
+
+# Encapsulation (Private Variable)
+
+class User:
+    def __init__(self, password):
+        self.__password = password
+
+    def show_password(self):
+        print("Password:", self.__password)
+
+
+u = User("abc123")
+u.show_password()
