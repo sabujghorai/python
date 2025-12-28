@@ -107,3 +107,17 @@ class Car(Vehicle):
 
 car = Car("Toyota")
 car.start()
+
+# Rectangle area (Method example)
+class Rectangle:
+    def set_values(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+
+r = Rectangle()
+r.set_values(5, 3)
+print("Area:", r.area())
