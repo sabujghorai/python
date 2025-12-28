@@ -121,3 +121,18 @@ class Rectangle:
 r = Rectangle()
 r.set_values(5, 3)
 print("Area:", r.area())
+
+# Inheritance Example
+class Person:
+    def display(self):
+        print("I am a person")
+
+
+class Teacher(Person):
+    def teach(self):
+        print("I teach students")
+
+
+t = Teacher()
+t.display()
+t.teach()
