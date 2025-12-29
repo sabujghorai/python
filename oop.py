@@ -51,23 +51,6 @@ print("Addition:", calc.add(10, 5))
 print("Subtraction:", calc.subtract(10, 5))
 
 
-# Real-Life Example (Combined OOP)
-class Vehicle:
-    def __init__(self, brand):
-        self.brand = brand
-
-    def start(self):
-        print(self.brand, "vehicle started")
-
-
-class Car(Vehicle):
-    def start(self):
-        print(self.brand, "car started with key")
-
-
-car = Car("Toyota")
-car.start()
-
 # Rectangle area (Method example)
 class Rectangle:
     def set_values(self, length, width):
