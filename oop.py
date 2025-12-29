@@ -171,3 +171,19 @@ shapes = [Circle(), Square()]
 
 for s in shapes:
     s.draw()
+
+# name and marks of a student
+class Student:
+    #default constructor
+    def __init__(self):
+        pass
+
+    #parameterized constructor
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+c1 = Student("karan","unknown")
+print(c1.name)
+print(c1.marks)
+print("the student has got 93 percent..")
