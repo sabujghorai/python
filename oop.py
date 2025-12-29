@@ -174,6 +174,8 @@ for s in shapes:
 
 # name and marks of a student
 class Student:
+    collage_name = "Brainware Univercity"
+    name = "Mr."
     #default constructor
     def __init__(self):
         pass
@@ -182,8 +184,9 @@ class Student:
     def __init__(self, name, marks):
         self.name = name
         self.marks = marks
+        print("from :",Student.collage_name)
+
 
 c1 = Student("karan","unknown")
-print(c1.name)
-print(c1.marks)
-print("the student has got 93 percent..")
+print(c1.name) # print name karan first 
+# because object preference > the class preference
