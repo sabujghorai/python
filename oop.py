@@ -38,7 +38,7 @@ class Student:
 s1 = Student("Sabuj", 21)
 s1.display()
 
-# class with methids
+# class with methods
 class Calculator:
     def add(self, a, b):
         return a + b
@@ -50,34 +50,6 @@ calc = Calculator()
 print("Addition:", calc.add(10, 5))
 print("Subtraction:", calc.subtract(10, 5))
 
-# Encapsulation (Using Private Variable)
-class BankAccount:
-    def __init__(self, balance):
-        self.__balance = balance   # private variable
-
-    def deposit(self, amount):
-        self.__balance += amount
-
-    def show_balance(self):
-        print("Balance:", self.__balance)
-
-account = BankAccount(5000)
-account.deposit(2000)
-account.show_balance()
-# Polymorphism
-class Bird:
-    def fly(self):
-        print("Bird can fly")
-
-class Penguin(Bird):
-    def fly(self):
-        print("Penguin cannot fly")
-
-b1 = Bird()
-b2 = Penguin()
-
-b1.fly()
-b2.fly()
 
 # Real-Life Example (Combined OOP)
 class Vehicle:
