@@ -104,3 +104,16 @@ class Student:
 s = Student("Krishna", [95,97,99])
 print(s.name,s.marks)
 s.average()
+
+# static method --> work at class level
+class Student:
+    def __init__(self,name):
+        self.name = name
+
+    @staticmethod # decorator
+    def hello():
+        print("hello")
+
+s = Student("karan")
+s.hello()
+print(s.name)
