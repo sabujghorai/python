@@ -132,3 +132,31 @@ class Car:
 
 car1 = Car()
 car1.start()
+
+# question 
+#  create Account class with two attributes balance & account no
+# now create a method for debit,credit and printing the balance
+class Account:
+    def __init__(self,balance,account):
+        self.balance = balance
+        self.account_no = account
+
+    #debit method
+    def debit(self,ammount):
+        self.balance -= ammount
+        print("RS.",ammount,"was debited")
+        print("total balance = ",self.get_balance())
+
+    def credit(self,ammount):
+        self.balance += ammount
+        print("RS.",ammount,"was credited")
+        print("total balance = ",self.get_balance())
+
+    def get_balance(self):
+        return self.balance
+
+
+
+acc1 = Account(10000,95859384242)
+acc1.debit(1000)
+acc1.credit(5000)
