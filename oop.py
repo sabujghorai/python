@@ -85,3 +85,22 @@ class Student:
         
 s = Student("hello sabuj ghorai") #object name is 's'
 s.hello() # to use method use write object name dot method name
+
+# Question
+# create student class that takes name & marks of 3 subjects as arguments in constructor. 
+# Then create a method to print the average
+class Student:
+
+    def __init__(self,name,marks):
+        self.name = name
+        self.marks = marks
+
+    def average(self):
+        sum = 0
+        for value in self.marks:
+            sum += value
+        print("hi",self.name,"your avg score is",sum/3)
+
+s = Student("Krishna", [95,97,99])
+print(s.name,s.marks)
+s.average()
