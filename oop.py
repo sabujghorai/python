@@ -38,19 +38,6 @@ class Student:
 s1 = Student("Sabuj", 21)
 s1.display()
 
-# class with methods
-class Calculator:
-    def add(self, a, b):
-        return a + b
-
-    def subtract(self, a, b):
-        return a - b
-
-calc = Calculator()
-print("Addition:", calc.add(10, 5))
-print("Subtraction:", calc.subtract(10, 5))
-
-
 # Rectangle area (Method example)
 class Rectangle:
     def set_values(self, length, width):
@@ -65,57 +52,7 @@ r = Rectangle()
 r.set_values(5, 3)
 print("Area:", r.area())
 
-# Inheritance Example
-class Person:
-    def display(self):
-        print("I am a person")
 
-
-class Teacher(Person):
-    def teach(self):
-        print("I teach students")
-
-
-t = Teacher()
-t.display()
-t.teach()
-
-# Encapsulation (Private Variable)
-
-class User:
-    def __init__(self, password):
-        self.__password = password
-
-    def show_password(self):
-        print("Password:", self.__password)
-
-
-u = User("abc123")
-u.show_password()
-
-# Polymorphism (Same Method Name)
-
-class Shape:
-    def draw(self):
-        print("Drawing a shape")
-
-
-class Circle(Shape):
-    def draw(self):
-        print("Drawing a circle")
-
-
-class Square(Shape):
-    def draw(self):
-        print("Drawing a square")
-
-
-shapes = [Circle(), Square()]
-
-for s in shapes:
-    s.draw()
-
-# name and marks of a student
 class Student:
     collage_name = "Brainware Univercity"
     name = "Mr."
@@ -133,3 +70,16 @@ class Student:
 c1 = Student("karan","unknown")
 print(c1.name) # print name karan first 
 # because object preference > the class preference
+
+
+# opp class with methods methods 
+class Student:
+    def __init__(self,fullname):
+        self.name = fullname
+
+
+    def welcome(self):
+        print("welcome Students",":",self.name)
+
+s1 = Student("sabuj")
+s1.welcome()
