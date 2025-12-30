@@ -74,12 +74,14 @@ print(c1.name) # print name karan first
 
 # opp class with methods methods 
 class Student:
+    collage_name = "Brainware University"
+    location = "Berasat"
+    
     def __init__(self,fullname):
-        self.name = fullname
-
-
-    def welcome(self):
-        print("welcome Students",":",self.name)
-
-s1 = Student("sabuj")
-s1.welcome()
+        self.fullname = fullname
+        
+    def hello(self): # method name is hello
+        print(self.fullname)
+        
+s = Student("hello sabuj ghorai") #object name is 's'
+s.hello() # to use method use write object name dot method name
