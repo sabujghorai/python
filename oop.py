@@ -117,3 +117,18 @@ class Student:
 s = Student("karan")
 s.hello()
 print(s.name)
+
+# Abstruction --> hiding the unnecessary
+class Car:
+    def __init__(self):
+        self.acc = False
+        self.brk = False
+        self.clutch = False
+
+    def start(self):
+        self.clutch = True #unnecessary
+        self.acc = True #unnecessary
+        print("car started...")
+
+car1 = Car()
+car1.start()
