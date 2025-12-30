@@ -155,8 +155,6 @@ class Account:
     def get_balance(self):
         return self.balance
 
-
-
 acc1 = Account(10000,95859384242)
 acc1.debit(1000)
 acc1.credit(5000)
