@@ -53,3 +53,20 @@ c = ToyotaCar("toyota corola")
 print(c.name)
 print(c.colour)
 print(c.start())
+
+# Question
+#create an ElectricCar class that inherits the car class and has an additional attribute battery_size
+class Car:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+
+class ElectricCar(Car): # The Car inheritence added
+    def __init__(self,brand,model,battery_size):
+        super().__init__(brand,model)
+        self.battery_size = battery_size
+
+my_tesla = ElectricCar("Tesla","Model S","85KWh")
+print(my_tesla.model)
+print(my_tesla.brand)
+print(my_tesla.battery_size)
