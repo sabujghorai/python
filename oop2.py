@@ -34,3 +34,22 @@ p1 = Person()
 print(p1.welcome())
 # print(p1.__name)# it will also show an erroor because the __name ia a private attribute
 
+# Inheritence
+class Car:
+    colour = "black"
+    @staticmethod
+    def start():
+        print("car started...")
+
+    @staticmethod
+    def stop():
+        print("car stopped..")
+
+class ToyotaCar(Car): # the Toytacar is the subcatagory of the Car
+    def __init__(self,name):
+        self.name = name
+
+c = ToyotaCar("toyota corola")
+print(c.name)
+print(c.colour)
+print(c.start())
