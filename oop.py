@@ -159,18 +159,3 @@ acc1 = Account(10000,95859384242)
 acc1.debit(1000)
 acc1.credit(5000)
 
-# create an ElectricCar class that inherits from the car class and has an additional attributes battery_size
-class Car:
-    def __init__(self,brand,model):
-        self.brand = brand
-        self.model = model
-
-class ElectricCar(Car): # The Car inheritence added
-    def __init__(self,brand,model,battery_size):
-        super().__init__(brand,model)
-        self.battery_size = battery_size
-
-my_tesla = ElectricCar("Tesla","Model S","85KWh")
-print(my_tesla.model)
-print(my_tesla.brand)
-print(my_tesla.battery_size)
