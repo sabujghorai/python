@@ -14,6 +14,10 @@ class Account:
         self.acc_num = acc_num # public attribute
         self.__acc_pass = acc_pass # private attribute 
 
+     def reset_pass(self):
+        print(self.__acc_pass)
+
 a = Account("123456","pass@1234")
 print(a.acc_num)
+print(a.reset_pass()) # now it will orint the password
 print(a.__acc_pass)# print error 'Account' object has no attribute 'acc_pass'
