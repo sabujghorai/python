@@ -175,3 +175,28 @@ p1 = Person()
 p1.changeName("Akash Ghorai")
 print(p1.name) # also works
 print(Person.name) # correct way
+
+#property
+class Student:
+
+    def __init__(self,phy,chem,math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math
+        # self.percentage = ((self.phy+self.chem+self.math)/3),"%"
+
+    # def calPercentage(self):
+    #     self.percentage = ((self.phy+self.chem+self.math)/3),"%"
+# insted of doing this we can use the @property method
+
+    @property
+    def percentage(self): # the method name is percentage
+        return ((self.phy+self.chem+self.math)/3),"%"
+    
+
+a = int(input("Enter the marks of physics :"))
+b = int(input("Enter the marks of chemistry :"))
+c = int(input("Enter the marks of maths :"))
+
+s1 = Student(a,b,c)
+print(s1.percentage)
