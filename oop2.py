@@ -108,3 +108,25 @@ c1 = C()
 print(c1.var1)
 print(c1.var2)
 print(c1.var3)
+
+# Super() method
+class Car:
+    def __init__(self, type):
+        self.type = type
+
+    @staticmethod
+    def start():
+        print("car started...")
+
+    @staticmethod
+    def stop():
+        print("car stopped...")
+
+class ToyotaCar(Car):
+    def __init__(self, name, type):
+        super().__init__(type)
+        self.name = name
+
+c = ToyotaCar("Prius", "Electric car")
+print(c.name)
+print(c.type)
