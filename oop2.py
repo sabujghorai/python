@@ -70,3 +70,25 @@ my_tesla = ElectricCar("Tesla","Model S","85KWh")
 print(my_tesla.model)
 print(my_tesla.brand)
 print(my_tesla.battery_size)
+
+# multi level inheritence
+class Car:
+    @staticmethod
+    def start():
+        print("car started..")
+
+    @staticmethod
+    def stop():
+        print("car stopped...")
+
+class ToyotaCar(Car):
+    def __ini__(self,name):
+        self.name = name
+
+class Fortuner(ToyotaCar):
+    def __init__(self,type):
+        self.type = type
+
+car1 = Fortuner("Electric car..")
+car1.start()
+print(car1.type)
