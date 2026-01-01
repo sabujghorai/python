@@ -187,6 +187,7 @@ class Student:
 
     # def calPercentage(self):
     #     self.percentage = ((self.phy+self.chem+self.math)/3),"%"
+    
 # insted of doing this we can use the @property method
 
     @property
