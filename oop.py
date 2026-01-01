@@ -173,5 +173,5 @@ class Person:
 
 p1 = Person()
 p1.changeName("Akash Ghorai")
-print(p1.name)
-print(Person.name)
+print(p1.name) # also works
+print(Person.name) # correct way
