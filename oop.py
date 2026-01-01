@@ -216,7 +216,17 @@ class Complex:
         newReal = self.real + number2.real
         newImg = self.img + number2.img
         return Complex(newReal,newImg)
+        
+    def __sub__(self,number2): # here we are using the dunder substraction function
+        newReal = self.real - number2.real
+        newImg = self.img - number2.img
+        return Complex(newReal,newImg)
 
+    def __mul__(self,number2): # here we are using the dunder multiplication function
+        newReal = self.real * number2.real
+        newImg = self.img * number2.img
+        return Complex(newReal,newImg)
+    
 
 num1 = Complex(1,3)
 num1.showNumber()
