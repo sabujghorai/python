@@ -167,7 +167,7 @@ class Person:
     #     self.new_name = new_name
 
 # insted of doing this we can use the callmethod
-    @classmethod
+    @classmethod  # decorator
     def changeName(cls,name):
         cls.name = name
 
