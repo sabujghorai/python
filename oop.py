@@ -159,3 +159,19 @@ acc1 = Account(10000,95859384242)
 acc1.debit(1000)
 acc1.credit(5000)
 
+# class method
+class Person:
+    name = "sabuj Ghorai"
+
+    # def changeName(self,new_name):
+    #     self.new_name = new_name
+
+# insted of doing this we can use the callmethod
+    @classmethod
+    def changeName(cls,name):
+        cls.name = name
+
+p1 = Person()
+p1.changeName("Akash Ghorai")
+print(p1.name)
+print(Person.name)
