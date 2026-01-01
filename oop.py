@@ -224,6 +224,7 @@ num1.showNumber()
 num2 = Complex(3,5)
 num2.showNumber()
 
+print("---------")
 num3 = num1 + num2 # if we write this without using the dunder function it will show an error
 # num3 = num1.add(num2)
 num3.showNumber()
