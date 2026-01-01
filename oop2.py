@@ -70,6 +70,7 @@ my_tesla = ElectricCar("Tesla","Model S","85KWh")
 print(my_tesla.model)
 print(my_tesla.brand)
 print(my_tesla.battery_size)
+# these are the single lever inheritence
 
 # multi level inheritence
 class Car:
