@@ -130,3 +130,20 @@ class ToyotaCar(Car):
 c = ToyotaCar("Prius", "Electric car")
 print(c.name)
 print(c.type)
+
+# class method
+class Person:
+    name = "sabuj Ghorai"
+
+    # def changeName(self,new_name):
+    #     self.new_name = new_name
+
+# insted of doing this we can use the callmethod
+    @classmethod  # decorator
+    def changeName(cls,name):
+        cls.name = name
+
+p1 = Person()
+p1.changeName("Akash Ghorai")
+print(p1.name) # also works
+print(Person.name) # correct way
