@@ -93,3 +93,18 @@ class Fortuner(ToyotaCar):
 car1 = Fortuner("Electric car..")
 car1.start()
 print(car1.type)
+
+# Multiple inheritence
+class A:  #parent class 1
+    var1 = "good morning 1"
+
+class B: # parent class 2
+    var2 = "good morning 2"
+
+class C(A,B):
+    var3 = "gppd morning 3"
+
+c1 = C()
+print(c1.var1)
+print(c1.var2)
+print(c1.var3)
