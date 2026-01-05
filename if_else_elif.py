@@ -9,3 +9,9 @@ elif(light == "yellow"):
 else:
     print("please enter a valid colour..")
   
+
+n = 5
+if(n>1):
+    print("good morning")
+else:
+    print("good night") # the time complexity will be O(1)
