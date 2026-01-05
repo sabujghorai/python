@@ -16,3 +16,9 @@ j = 5
 while j>=1:
   print(j)
   j-=1
+n = 5
+m = 10
+print(m+n)
+for i in range(0,n):
+    for j in range(0,m,2):
+        print("hello")
