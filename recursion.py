@@ -9,26 +9,27 @@
 
 # show(b)
 
-# print the factorial of a number using recursion taking from user input
-
-b = int(input("Enter a number :"))
-
-def fact(a):
-  if(a == 0):
-    return 1
-  return a*fact(a-1)
-
-print("factorial of your given number is :",fact(b))
-
-# # print the sum of all n natural numbers
+# # print the factorial of a number using recursion taking from user input
 
 # b = int(input("Enter a number :"))
 
-# def sum(a):
-#   if(a == 1):
+# def fact(a):
+#   if(a == 0):
 #     return 1
-#   return a+sum(a-1)
+#   return a*fact(a-1)
 
+# print("factorial of your given number is :",fact(b))
+
+# # print the sum of all n natural numbers
+
+n = int(input("Enter a number :"))
+
+def sum(n):
+    if (n == 0 ):
+        return 0
+    return n+sum(n-1)
+
+print("The sum of your ",n,"th term is ",sum(n))
 # print("sum of your all natural number is :",sum(b))
 
 # # fibonacci series of n term taking input from user
