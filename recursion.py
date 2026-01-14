@@ -1,13 +1,13 @@
-# print numbers in reverse order
-b = int(input("Enter a number :"))
+# # print numbers in reverse order
+# b = int(input("Enter a number :"))
 
-def show(n):
-  if(n == 0): # base case
-    return
-  print(n)
-  show(n-1) # function call
+# def show(n):
+#   if(n == 0): # base case
+#     return
+#   print(n)
+#   show(n-1) # function call
 
-show(b)
+# show(b)
 
 # print the factorial of a number using recursion taking from user input
 
@@ -20,65 +20,65 @@ def fact(a):
 
 print("factorial of your given number is :",fact(b))
 
-# print the sum of all n natural numbers
+# # print the sum of all n natural numbers
 
-b = int(input("Enter a number :"))
+# b = int(input("Enter a number :"))
 
-def sum(a):
-  if(a == 1):
-    return 1
-  return a+sum(a-1)
+# def sum(a):
+#   if(a == 1):
+#     return 1
+#   return a+sum(a-1)
 
-print("sum of your all natural number is :",sum(b))
+# print("sum of your all natural number is :",sum(b))
 
-# fibonacci series of n term taking input from user
-def fibonacci(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fibonacci(n-1) + fibonacci(n-2)
+# # fibonacci series of n term taking input from user
+# def fibonacci(n):
+#     if n == 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     else:
+#         return fibonacci(n-1) + fibonacci(n-2)
 
-n = int(input("Enter the number of terms: "))
+# n = int(input("Enter the number of terms: "))
 
-print("Fibonacci series:")
-for i in range(n):
-    print(fibonacci(i), end=" ")
-# power of a number...
-def power(a, b):
-    if b == 0:
-        return 1
-    return a * power(a, b - 1)
+# print("Fibonacci series:")
+# for i in range(n):
+#     print(fibonacci(i), end=" ")
+# # power of a number...
+# def power(a, b):
+#     if b == 0:
+#         return 1
+#     return a * power(a, b - 1)
 
-a = int(input("Enter base: "))
-b = int(input("Enter power: "))
-print("Result:", power(a, b))
+# a = int(input("Enter base: "))
+# b = int(input("Enter power: "))
+# print("Result:", power(a, b))
 
-def count_digits(n):
-    if n == 0:
-        return 0
-    return 1 + count_digits(n // 10)
+# def count_digits(n):
+#     if n == 0:
+#         return 0
+#     return 1 + count_digits(n // 10)
 
-num = int(input("Enter a number: "))
-print("Number of digits:", count_digits(num))
+# num = int(input("Enter a number: "))
+# print("Number of digits:", count_digits(num))
 
-# count digit in a numbere
-def count_digits(n):
-    if n == 0:
-        return 0
-    return 1 + count_digits(n // 10)
+# # count digit in a numbere
+# def count_digits(n):
+#     if n == 0:
+#         return 0
+#     return 1 + count_digits(n // 10)
 
-num = int(input("Enter a number: "))
-print("Number of digits:", count_digits(num))
+# num = int(input("Enter a number: "))
+# print("Number of digits:", count_digits(num))
 
-# write a recursive function to print all element in a list 
-# Hint : use & index as parameter
+# # write a recursive function to print all element in a list 
+# # Hint : use & index as parameter
 
-def print_list(list,idx=0):
-   if (len(list) == idx):
-      return
-   print(list[idx])
-   print_list(list,idx+1)
-fruit = ["mango","banana","lichi","orange"]
-print_list
+# def print_list(list,idx=0):
+#    if (len(list) == idx):
+#       return
+#    print(list[idx])
+#    print_list(list,idx+1)
+# fruit = ["mango","banana","lichi","orange"]
+# print_list
