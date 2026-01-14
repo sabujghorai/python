@@ -22,30 +22,29 @@
 
 # # print the sum of all n natural numbers
 
-n = int(input("Enter a number :"))
+# n = int(input("Enter a number :"))
 
-def sum(n):
-    if (n == 0 ):
-        return 0
-    return n+sum(n-1)
+# def sum(n):
+#     if (n == 0 ):
+#         return 0
+#     return n+sum(n-1)
 
-print("The sum of your ",n,"th term is ",sum(n))
+# print("The sum of your ",n,"th term is ",sum(n))
 # print("sum of your all natural number is :",sum(b))
 
 # # fibonacci series of n term taking input from user
-# def fibonacci(n):
-#     if n == 0:
-#         return 0
-#     elif n == 1:
-#         return 1
-#     else:
-#         return fibonacci(n-1) + fibonacci(n-2)
+n = int(input("Enter the term :"))
 
-# n = int(input("Enter the number of terms: "))
+def fibo(n):
+    if (n == 0):
+        return 0
+    if(n == 1):
+        return 1
+    return fibo(n-1)+fibo(n-2)
 
-# print("Fibonacci series:")
-# for i in range(n):
-#     print(fibonacci(i), end=" ")
+for i in range(n):
+    print(fibo(i),end= " ")
+print("These are the fibonacci series...")
 # # power of a number...
 # def power(a, b):
 #     if b == 0:
