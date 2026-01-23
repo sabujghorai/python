@@ -41,3 +41,6 @@ for i in range(5):
   # we want to empty
   pass
 print("pass statement does nothing")
+
+
+print("hello world")
